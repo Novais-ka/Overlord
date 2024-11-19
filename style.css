@@ -1,0 +1,573 @@
+/* Estilos gerais */
+html, body {
+  margin: 0; /* Remove margens */
+  padding: 0; /* Remove preenchimentos */
+  height: 100%; /* Define altura como 100% */
+  width: 100%; /* Define largura como 100% */
+}
+body {
+  overflow: hidden; /* Remove a barra de rolagem */
+}
+button:hover {
+            background-color: black;
+            color:white;
+        }
+
+
+.index-background {
+  background: none; /* Ou qualquer outro estilo que você queira */
+ 
+}
+/* Estilos para outras páginas (sem background) */
+
+
+ul {
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font: bold;
+}
+
+
+p {
+  color: aliceblue;
+  font-size: 30px;
+  font: bold;
+  text-decoration: none; /* Este estilo não é aplicado a links */
+}
+
+/* Estilização para links */
+a {
+  color: inherit; /* Herda a cor do elemento pai */
+  text-decoration: none; /* Remove o sublinhado */
+}
+.container1 {
+  background-image: url(img/0102.jpg); /* Caminho da sua imagem */
+  background-size: cover; /* Cobre todo o fundo */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Não repete a imagem */
+  height: 100vh; /* Altura do elemento, ajuste conforme necessário */
+  width: 100%; /* Largura do elemento */
+}
+ 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+body *{
+  box-sizing: border-box;
+}
+.main-login{
+  width: 100vw;
+  height: 100vh;
+  background: #201b2c; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.left-login{
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.left-login h1{
+      color: gold;
+      flex-direction: column;
+}
+.left-login-img{
+  margin-top: 20px; /* Espaço acima da imagem */
+  width: 600px; /* Defina a largura desejada */
+  height: auto; /* Mantém a proporção da imagem */
+ 
+}
+.right-login{
+    width: 7vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-login{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px; 
+    background: #2f2841 ;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1{
+  color: rgb(241, 205, 0);
+  font-weight: 800;
+  margin: 0;
+}
+
+.textfield{
+  width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: center;
+   margin: 10px 0px;
+}
+
+.textfield input{
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  background: #514869;
+  color: #f0ffffde;
+  font-size: 12pt;
+  box-shadow: 0px 10px 40px #00000056;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.textfield label{
+  color: #f0ffffde;
+  margin-bottom: 10px;
+}
+
+.textfield input::placeholder {
+     color: #f0ffff94;
+}
+
+.btn-login {
+  width: 100%;
+  padding: 16px 0px;
+  margin: 25px auto;  /* Isso centraliza horizontalmente */
+  border:none;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 3px;
+  color: #2b134b;
+  background: gold;
+  cursor: pointer ;
+  box-shadow: 0px 10px 40px -12px rgb(161, 138, 5);
+}
+
+/* Media Queries */
+@media screen and (max-width: 900px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .main-login {
+        flex-direction: column;
+    }
+    .left-login h1 {
+        display: none;
+    }
+    .left-login {
+        width: 100%;
+        height: auto;
+    }
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+    .left-login-img{
+      width: 100vw;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #24252a;
+  box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 6rem;
+}
+ 
+.logo {
+  display: flex;
+  align-items: center;
+ }
+
+.logo h1 {
+  color: #fff;
+}
+
+.nav-list ul {
+display: flex;
+justify-content: center;
+list-style: none;
+}
+
+.nav-item{
+  margin: 0 15px;
+}
+.nav-link {
+    text-decoration:  none;
+   font-size: 1.15rem;
+   color: #fff;
+   font-weight: 400;
+}
+
+.login-button button {
+  border: none;
+  background-color: black;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.login-button button a {
+       text-decoration: none;
+       color: #fff;
+       font-weight: 500;
+}
+.mobile-menu-icon {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+@media screen and (max-width: 730px) {
+  .nav-bar {
+      padding: 1.5rem 4rem;
+  }
+  .nav-item {
+      display: none;
+  }
+  .login-button {
+      display: none;
+  }
+  .mobile-menu-icon {
+      display: block;
+  }
+  .mobile-menu-icon button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+  }
+  .mobile-menu ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      padding-bottom: 1rem;
+  }
+  .mobile-menu .nav-item {
+      display: block;
+      padding-top: 1.2rem;
+  }
+  .mobile-menu .login-button {
+      display: block;
+      padding: 1rem 2rem;
+  }
+  .mobile-menu .login-button button {
+      width: 100%;
+  }
+  .open {
+      display: block;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+.Ainz-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background: #000000; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Ainz-link h2 {
+  color: gold; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 20px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size: 25px;
+}
+
+.Ainz-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 310px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+
+
+/* Media query para dispositivos móveis */
+@media (max-width: 600px) {
+  .Ainz-link {
+      padding: 10px; /* Ajuste geral do padding */
+  }
+
+  .Ainz-link h3 {
+      font-size: 20px; /* Ajusta o tamanho da fonte em telas menores */
+      column-count: 1; /* Uma coluna em telas pequenas */
+  }
+
+  .Ainz-link-img {
+    
+      max-width: 90%; /* Ajusta a largura máxima da imagem em telas pequenas */
+      bottom: 10px; /* Distância do fundo em telas pequenas */
+      right: 10px; /* Distância da direita em telas pequenas */
+  }
+}
+
+.Albedo-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background: #000000; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Albedo-link h2 {
+  color: white; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 20px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:23px;
+}
+
+.Aalbedo-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 310px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+.Demiurge-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background: #b84008; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Demiurge-link h2 {
+  color: #000000; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 20px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:22px;
+}
+
+.Demiurge-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 310px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+.Shalltear-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background: #6A4C9C; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20x;
+  box-sizing: border-box;
+}
+
+.Shalltear-link h2 {
+  color: white; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 20px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:22px;
+}
+
+.Shalltear-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 310px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+
+.Mare-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background:  #F5F5DC ; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Mare-link h2 {
+  color:black; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 18px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:20px;
+}
+
+.Mare-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 300px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+.Aura-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background:  #F5F5DC ; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Aura-link h2 {
+  color:black; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 18px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:19px;
+}
+
+.Aura-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 290px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+
+.Cocytus-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background:   #A8B8C8 ; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Cocytus-link h2 {
+  color:black; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 18px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:23px;
+}
+
+.Cocytus-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 300px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+
+.Agente-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background:   Gold ; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Agente-link h2 {
+  color:black; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 18px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:23px;
+}
+
+.Agente-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 300px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+
+
+.Sebas-link {
+  position: relative; /* Permite posicionar elementos filhos */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  background:   #000000 ; /* Fundo do contêiner */
+  width: 100%;
+  height: 100vh; /* Ocupa toda a altura da viewport */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.Sebas-link h2 {
+  color: white; /* Mantém o texto visível no fundo escuro */
+  text-align: justify; /* Justifica o texto para um visual mais de "livro" */
+  column-count: 2; /* Define o número de colunas */
+  column-gap: 20px; /* Espaço entre as colunas */
+  padding: 18px; /* Espaço ao redor do texto */
+  overflow-wrap: break-word; /* Quebra palavras longas */
+  font-size:20px;
+}
+
+.Sebas-link-img {
+  width: 100%; /* A imagem ocupará 100% da largura do contêiner */
+  max-width: 300px; /* Largura máxima da imagem para telas maiores */
+  height: auto; /* Mantém a proporção */
+  margin: 20px 0; /* Espaço acima e abaixo da imagem */
+ 
+}
+
+

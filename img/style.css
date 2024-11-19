@@ -1,0 +1,15 @@
+/* Essa parte é para definir o estilo do corpo da pagina*/
+body .inicio{
+    background-image: url('img/nazarick.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+ul {
+list-style: none;
+display: flexbox;
+text-decoration: none;
+text-decoration-color: antiquewhite;
+
+}
